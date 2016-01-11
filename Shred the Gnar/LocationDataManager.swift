@@ -35,14 +35,13 @@ class LocationDataManager: NSObject, CLLocationManagerDelegate {
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.allowsBackgroundLocationUpdates = true
+        locationManager.activityType = CLActivityType.OtherNavigation
         
         locationManager.requestAlwaysAuthorization()
 
-
     }
 
-    // Location Manager Delegate stuff
-    // If failed
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         locationManager.stopUpdatingLocation()
         if (seenError == false) {
@@ -59,7 +58,6 @@ class LocationDataManager: NSObject, CLLocationManagerDelegate {
 
     }
 
-    // authorization status
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         var shouldIAllow = false
 

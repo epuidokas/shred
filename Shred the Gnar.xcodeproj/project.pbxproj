@@ -14,6 +14,7 @@
 		07C370401C4006BC00821BD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C3703F1C4006BC00821BD1 /* Assets.xcassets */; };
 		07C370431C4006BC00821BD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C370411C4006BC00821BD1 /* LaunchScreen.storyboard */; };
 		07C3704B1C4033E600821BD1 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3704A1C4033E600821BD1 /* LocationDataManager.swift */; };
+		2FA281210845E097F4805B19 /* LocationDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA28395327FD9C211214274 /* LocationDatabase.swift */; };
 		2FA28E5B05BCF9F84CB47188 /* LocationDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA28A2E061F3CABEED3AB2C /* LocationDataDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		07C370421C4006BC00821BD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07C370441C4006BC00821BD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07C3704A1C4033E600821BD1 /* LocationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
+		2FA28395327FD9C211214274 /* LocationDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDatabase.swift; sourceTree = "<group>"; };
 		2FA28A2E061F3CABEED3AB2C /* LocationDataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDataDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 				07C370441C4006BC00821BD1 /* Info.plist */,
 				07C3704A1C4033E600821BD1 /* LocationDataManager.swift */,
 				2FA28A2E061F3CABEED3AB2C /* LocationDataDelegate.swift */,
+				2FA28395327FD9C211214274 /* LocationDatabase.swift */,
 			);
 			path = "Shred the Gnar";
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				07C3704B1C4033E600821BD1 /* LocationDataManager.swift in Sources */,
 				07C370391C4006BC00821BD1 /* FirstViewController.swift in Sources */,
 				2FA28E5B05BCF9F84CB47188 /* LocationDataDelegate.swift in Sources */,
+				2FA281210845E097F4805B19 /* LocationDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +315,7 @@
 				07C370491C4006BC00821BD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

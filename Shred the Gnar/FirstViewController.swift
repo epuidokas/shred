@@ -8,12 +8,16 @@
 
 import UIKit
 import CoreLocation
+import MapKit
 
 class FirstViewController: UIViewController, LocationDataDelegate {
     
     @IBOutlet weak var textbox: UILabel!
     
+    @IBOutlet weak var mapView: MKMapView!
+    
     override func viewDidLoad() {
+        mapView.mapType = MKMapType.Satellite
         super.viewDidLoad()
     }
 
@@ -43,11 +47,6 @@ class FirstViewController: UIViewController, LocationDataDelegate {
         var locationObj = locationArray.lastObject as! CLLocation
         var coord = locationObj.coordinate
         
-        print(coord.latitude)
-        print(coord.longitude)
-        
-        
-        
         if (textbox != nil) {
             
             var string = textbox.text as String!
@@ -56,10 +55,7 @@ class FirstViewController: UIViewController, LocationDataDelegate {
             var lon = String(format:"%f", coord.longitude)
             
             string = string + "\nlat:" + lat + ", lon:" + lon
-            
-            
-            
-            
+
             textbox.text = string
         }
         

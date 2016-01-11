@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Shred the Gnar/FirstViewController.swift"
-            timestampString = "473982519.984147"
+            timestampString = "474238179.952133"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "didUpdateLocations(_:)"
             landmarkType = "5">
          </BreakpointContent>
