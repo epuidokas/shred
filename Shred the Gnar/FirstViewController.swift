@@ -23,23 +23,25 @@ class FirstViewController: UIViewController, LocationDataDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
-
     }
-    
-    override func viewDidAppear(animated: Bool) {
-        
-        print("opening")
 
+    override func viewWillAppear(animated: Bool) {
+        loadLocation()
+    }
+
+    override func viewDidAppear(animated: Bool) {
         LocationDataManager.instance.registerDelegate(self)
         LocationDataManager.instance.startTracking()
+        loadLocation()
     }
     
     override func viewWillDisappear(animated: Bool) {
-
-        LocationDataManager.instance.unregisterDelegate(self)
-        print("closing")
+        NSLog("Heading: " + String(mapView.camera.heading))
+        NSLog("Pitch: " + String(mapView.camera.pitch))
+        NSLog("Distance: " + String(mapView.camera.altitude))
+        NSLog("Center: " + String(mapView.camera.centerCoordinate.latitude) + "," + String(mapView.camera.centerCoordinate.longitude))
         
+        LocationDataManager.instance.unregisterDelegate(self)
     }
 
     func didUpdateLocations( locations: [CLLocation]) {
@@ -58,6 +60,26 @@ class FirstViewController: UIViewController, LocationDataDelegate {
 
             textbox.text = string
         }
+        
+    }
+
+    func loadLocation() {
+        
+        // Hardcoded to Okemo
+        
+        var center: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 43.4097813313175, longitude: -72.7328804582154)
+        var distance: CLLocationDistance = CLLocationDistance(11640.3639390641)
+        var pitch: CGFloat = 0.0;
+        var heading: CLLocationDirection = 280.484390097839;
+        
+
+        //mapView.setRegion(region, animated: false)
+
+        //var camea: MKMapCamera = MKMapCamera(lookingAtCenterCoordinate: locationTo, fromEyeCoordinate: locationFrom, eyeAltitude: distance)
+        //
+        var camea: MKMapCamera = MKMapCamera(lookingAtCenterCoordinate: center, fromDistance: distance, pitch: pitch, heading: heading)
+
+        mapView.setCamera(camea, animated: false)
         
     }
 
