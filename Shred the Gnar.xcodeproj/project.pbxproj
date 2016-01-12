@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0785252A1C4486A1002E4944 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078525291C4486A1002E4944 /* FMDB.framework */; };
+		073E416F1C45468000192A1E /* fmdb in Resources */ = {isa = PBXBuildFile; fileRef = 073E416E1C45468000192A1E /* fmdb */; };
+		073E41721C4546CD00192A1E /* fmdb in Resources */ = {isa = PBXBuildFile; fileRef = 073E41711C4546CD00192A1E /* fmdb */; };
+		073E41731C4546F200192A1E /* fmdb in Sources */ = {isa = PBXBuildFile; fileRef = 073E41711C4546CD00192A1E /* fmdb */; };
 		07BAA0D91C445E3A004B05F0 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BAA0D81C445E3A004B05F0 /* libsqlite3.0.tbd */; };
 		07C370371C4006BC00821BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C370361C4006BC00821BD1 /* AppDelegate.swift */; };
 		07C370391C4006BC00821BD1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C370381C4006BC00821BD1 /* FirstViewController.swift */; };
@@ -23,7 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		078525291C4486A1002E4944 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = "Pods/../build/Debug-iphoneos/FMDB.framework"; sourceTree = "<group>"; };
+		073E416C1C4544A500192A1E /* Shred the Gnar-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Shred the Gnar-Bridging-Header.h"; sourceTree = "<group>"; };
+		073E416E1C45468000192A1E /* fmdb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fmdb; path = "/Users/eric/projects/Shred the Gnar/fmdb"; sourceTree = "<absolute>"; };
+		073E41711C4546CD00192A1E /* fmdb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fmdb; sourceTree = "<group>"; };
 		07BAA0D81C445E3A004B05F0 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		07C370331C4006BC00821BD1 /* Shred the Gnar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shred the Gnar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C370361C4006BC00821BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +53,6 @@
 			files = (
 				07BAA0D91C445E3A004B05F0 /* libsqlite3.0.tbd in Frameworks */,
 				FB0FAECD9AABAF5717DEE29C /* Pods.framework in Frameworks */,
-				0785252A1C4486A1002E4944 /* FMDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +81,7 @@
 		07C370351C4006BC00821BD1 /* Shred the Gnar */ = {
 			isa = PBXGroup;
 			children = (
+				073E41711C4546CD00192A1E /* fmdb */,
 				07C370361C4006BC00821BD1 /* AppDelegate.swift */,
 				07C370381C4006BC00821BD1 /* FirstViewController.swift */,
 				07C3703A1C4006BC00821BD1 /* SecondViewController.swift */,
@@ -88,6 +92,7 @@
 				07C3704A1C4033E600821BD1 /* LocationDataManager.swift */,
 				2FA28A2E061F3CABEED3AB2C /* LocationDataDelegate.swift */,
 				2FA28395327FD9C211214274 /* LocationDatabase.swift */,
+				073E416C1C4544A500192A1E /* Shred the Gnar-Bridging-Header.h */,
 			);
 			path = "Shred the Gnar";
 			sourceTree = "<group>";
@@ -95,7 +100,6 @@
 		A4FEF01156244497A3400206 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				078525291C4486A1002E4944 /* FMDB.framework */,
 				07BAA0D81C445E3A004B05F0 /* libsqlite3.0.tbd */,
 				3CC52832CF1282D45EABA167 /* Pods.framework */,
 			);
@@ -181,6 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073E416F1C45468000192A1E /* fmdb in Resources */,
+				073E41721C4546CD00192A1E /* fmdb in Resources */,
 				07C370431C4006BC00821BD1 /* LaunchScreen.storyboard in Resources */,
 				07C370401C4006BC00821BD1 /* Assets.xcassets in Resources */,
 				07C3703E1C4006BC00821BD1 /* Main.storyboard in Resources */,
@@ -243,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073E41731C4546F200192A1E /* fmdb in Sources */,
 				07C3703B1C4006BC00821BD1 /* SecondViewController.swift in Sources */,
 				07C370371C4006BC00821BD1 /* AppDelegate.swift in Sources */,
 				07C3704B1C4033E600821BD1 /* LocationDataManager.swift in Sources */,
@@ -374,6 +381,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.donkfish.Shred-the-Gnar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Shred the Gnar/Shred the Gnar-Bridging-Header.h";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
@@ -395,6 +403,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.donkfish.Shred-the-Gnar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Shred the Gnar/Shred the Gnar-Bridging-Header.h";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;

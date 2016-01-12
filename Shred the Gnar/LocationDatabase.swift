@@ -5,7 +5,6 @@
 
 import Foundation
 import CoreLocation
-import FMDB
 
 class LocationDatabase: NSObject, LocationDataDelegate {
 
@@ -21,6 +20,7 @@ class LocationDatabase: NSObject, LocationDataDelegate {
     }
 
     func loadDatabase() {
+        /*
         let filemgr = NSFileManager.defaultManager()
         let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,.UserDomainMask, true)
 
@@ -49,6 +49,7 @@ class LocationDatabase: NSObject, LocationDataDelegate {
                 println("Error: \(contactDB.lastErrorMessage())")
             }
         }
+        */
     }
 
     func setBackgroundMode(isInBackground: Bool) {
@@ -85,7 +86,6 @@ class LocationDatabase: NSObject, LocationDataDelegate {
     {
         // write locations to SQL database
 
-        location.
         var lat = String(format:"%f", location.coordinate.latitude)
         var lon = String(format:"%f", location.coordinate.longitude)
         print("\nlat:" + lat + ", lon:" + lon)
