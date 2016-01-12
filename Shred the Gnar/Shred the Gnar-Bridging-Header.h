@@ -11,3 +11,6 @@
 
 
 #endif /* Shred_the_Gnar_Bridging_Header_h */
+
+#import "fmdb/FMDB.h"
+#import "fmdb/FMResultSet.h"

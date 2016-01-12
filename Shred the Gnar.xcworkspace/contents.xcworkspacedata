@@ -4,7 +4,4 @@
    <FileRef
       location = "group:Shred the Gnar.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
 </Workspace>

@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import CoreLocation
 
 class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let locations: NSMutableArray = LocationDatabase.instance.getLocationsForTripId(1)
+        
     }
 
     override func didReceiveMemoryWarning() {

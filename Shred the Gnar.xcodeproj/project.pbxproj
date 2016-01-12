@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		073E416F1C45468000192A1E /* fmdb in Resources */ = {isa = PBXBuildFile; fileRef = 073E416E1C45468000192A1E /* fmdb */; };
-		073E41721C4546CD00192A1E /* fmdb in Resources */ = {isa = PBXBuildFile; fileRef = 073E41711C4546CD00192A1E /* fmdb */; };
-		073E41731C4546F200192A1E /* fmdb in Sources */ = {isa = PBXBuildFile; fileRef = 073E41711C4546CD00192A1E /* fmdb */; };
-		07BAA0D91C445E3A004B05F0 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BAA0D81C445E3A004B05F0 /* libsqlite3.0.tbd */; };
+		0709E28D1C45A7780030F594 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0709E28C1C45A7780030F594 /* FMResultSet.m */; };
+		0709E2911C45A7A20030F594 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0709E2901C45A7A20030F594 /* FMDatabase.m */; };
 		07C370371C4006BC00821BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C370361C4006BC00821BD1 /* AppDelegate.swift */; };
 		07C370391C4006BC00821BD1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C370381C4006BC00821BD1 /* FirstViewController.swift */; };
 		07C3703B1C4006BC00821BD1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3703A1C4006BC00821BD1 /* SecondViewController.swift */; };
@@ -19,14 +17,14 @@
 		07C370431C4006BC00821BD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C370411C4006BC00821BD1 /* LaunchScreen.storyboard */; };
 		07C3704B1C4033E600821BD1 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3704A1C4033E600821BD1 /* LocationDataManager.swift */; };
 		2FA281210845E097F4805B19 /* LocationDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA28395327FD9C211214274 /* LocationDatabase.swift */; };
-		2FA285E56769504CD8DB2ED3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2FA28EB8F18D92CD07BAE0D1 /* Podfile */; };
 		2FA28E5B05BCF9F84CB47188 /* LocationDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA28A2E061F3CABEED3AB2C /* LocationDataDelegate.swift */; };
-		FB0FAECD9AABAF5717DEE29C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC52832CF1282D45EABA167 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0709E28C1C45A7780030F594 /* FMResultSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = "Shred the Gnar/fmdb/FMResultSet.m"; sourceTree = "<group>"; };
+		0709E28E1C45A7950030F594 /* FMDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = "Shred the Gnar/fmdb/FMDB.h"; sourceTree = "<group>"; };
+		0709E2901C45A7A20030F594 /* FMDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = "Shred the Gnar/fmdb/FMDatabase.m"; sourceTree = "<group>"; };
 		073E416C1C4544A500192A1E /* Shred the Gnar-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Shred the Gnar-Bridging-Header.h"; sourceTree = "<group>"; };
-		073E416E1C45468000192A1E /* fmdb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fmdb; path = "/Users/eric/projects/Shred the Gnar/fmdb"; sourceTree = "<absolute>"; };
 		073E41711C4546CD00192A1E /* fmdb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fmdb; sourceTree = "<group>"; };
 		07BAA0D81C445E3A004B05F0 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		07C370331C4006BC00821BD1 /* Shred the Gnar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shred the Gnar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,10 +38,6 @@
 		07C3704A1C4033E600821BD1 /* LocationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 		2FA28395327FD9C211214274 /* LocationDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDatabase.swift; sourceTree = "<group>"; };
 		2FA28A2E061F3CABEED3AB2C /* LocationDataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDataDelegate.swift; sourceTree = "<group>"; };
-		2FA28EB8F18D92CD07BAE0D1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3CC52832CF1282D45EABA167 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD95A694883828FEFE66701D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		F844416638DF2917AE511F0B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07BAA0D91C445E3A004B05F0 /* libsqlite3.0.tbd in Frameworks */,
-				FB0FAECD9AABAF5717DEE29C /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,10 +54,11 @@
 		07C3702A1C4006BC00821BD1 = {
 			isa = PBXGroup;
 			children = (
+				0709E2901C45A7A20030F594 /* FMDatabase.m */,
+				0709E28E1C45A7950030F594 /* FMDB.h */,
+				0709E28C1C45A7780030F594 /* FMResultSet.m */,
 				07C370351C4006BC00821BD1 /* Shred the Gnar */,
 				07C370341C4006BC00821BD1 /* Products */,
-				2FA28EB8F18D92CD07BAE0D1 /* Podfile */,
-				D280DB2C8EC5678AF38D8E47 /* Pods */,
 				A4FEF01156244497A3400206 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -101,18 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				07BAA0D81C445E3A004B05F0 /* libsqlite3.0.tbd */,
-				3CC52832CF1282D45EABA167 /* Pods.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D280DB2C8EC5678AF38D8E47 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DD95A694883828FEFE66701D /* Pods.debug.xcconfig */,
-				F844416638DF2917AE511F0B /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,12 +105,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07C370471C4006BC00821BD1 /* Build configuration list for PBXNativeTarget "Shred the Gnar" */;
 			buildPhases = (
-				B6DDBE9BF30EB8CD04D55ADF /* Check Pods Manifest.lock */,
 				07C3702F1C4006BC00821BD1 /* Sources */,
 				07C370301C4006BC00821BD1 /* Frameworks */,
 				07C370311C4006BC00821BD1 /* Resources */,
-				E57C4404E2E0698F3F695928 /* Embed Pods Frameworks */,
-				3C2F81A8F7C09E7E700D022E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,77 +165,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				073E416F1C45468000192A1E /* fmdb in Resources */,
-				073E41721C4546CD00192A1E /* fmdb in Resources */,
 				07C370431C4006BC00821BD1 /* LaunchScreen.storyboard in Resources */,
 				07C370401C4006BC00821BD1 /* Assets.xcassets in Resources */,
 				07C3703E1C4006BC00821BD1 /* Main.storyboard in Resources */,
-				2FA285E56769504CD8DB2ED3 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3C2F81A8F7C09E7E700D022E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B6DDBE9BF30EB8CD04D55ADF /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E57C4404E2E0698F3F695928 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07C3702F1C4006BC00821BD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				073E41731C4546F200192A1E /* fmdb in Sources */,
 				07C3703B1C4006BC00821BD1 /* SecondViewController.swift in Sources */,
 				07C370371C4006BC00821BD1 /* AppDelegate.swift in Sources */,
 				07C3704B1C4033E600821BD1 /* LocationDataManager.swift in Sources */,
 				07C370391C4006BC00821BD1 /* FirstViewController.swift in Sources */,
 				2FA28E5B05BCF9F84CB47188 /* LocationDataDelegate.swift in Sources */,
 				2FA281210845E097F4805B19 /* LocationDatabase.swift in Sources */,
+				0709E28D1C45A7780030F594 /* FMResultSet.m in Sources */,
+				0709E2911C45A7A20030F594 /* FMDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +295,6 @@
 		};
 		07C370481C4006BC00821BD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD95A694883828FEFE66701D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -378,6 +307,7 @@
 				INFOPLIST_FILE = "Shred the Gnar/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-lsqlite3";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.donkfish.Shred-the-Gnar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -388,7 +318,6 @@
 		};
 		07C370491C4006BC00821BD1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F844416638DF2917AE511F0B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -400,6 +329,7 @@
 				);
 				INFOPLIST_FILE = "Shred the Gnar/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lsqlite3";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.donkfish.Shred-the-Gnar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
