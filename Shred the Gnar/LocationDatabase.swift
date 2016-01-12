@@ -5,6 +5,7 @@
 
 import Foundation
 import CoreLocation
+import FMDB
 
 class LocationDatabase: NSObject, LocationDataDelegate {
 
@@ -17,6 +18,37 @@ class LocationDatabase: NSObject, LocationDataDelegate {
     override init() {
         locationDataForBackground = [CLLocation]()
         super.init()
+    }
+
+    func loadDatabase() {
+        let filemgr = NSFileManager.defaultManager()
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,.UserDomainMask, true)
+
+        let docsDir:String = dirPaths[0]
+
+        
+        let databasePath:String = NSURL(fileURLWithPath: docsDir).URLByAppendingPathExtension("data.db").absoluteString
+
+        
+        
+        if !filemgr.fileExistsAtPath(databasePath as String) {
+
+            let contactDB = FMDatabase(path: databasePath as String)
+
+            if contactDB == nil {
+                println("Error: \(contactDB.lastErrorMessage())")
+            }
+
+            if contactDB.open() {
+                let sql_stmt = "CREATE TABLE IF NOT EXISTS location_data (id INTEGER PRIMARY KEY AUTOINCREMENT, trip_id INTEGER, timestamp INTEGER, lat REAL, lon REAL, alt REAL, speed REAL, course REAL, h_acc REAL, v_acc REAL )"
+                if !contactDB.executeStatements(sql_stmt) {
+                    println("Error: \(contactDB.lastErrorMessage())")
+                }
+                contactDB.close()
+            } else {
+                println("Error: \(contactDB.lastErrorMessage())")
+            }
+        }
     }
 
     func setBackgroundMode(isInBackground: Bool) {
@@ -52,6 +84,8 @@ class LocationDatabase: NSObject, LocationDataDelegate {
     func saveLocation( location: CLLocation)
     {
         // write locations to SQL database
+
+        location.
         var lat = String(format:"%f", location.coordinate.latitude)
         var lon = String(format:"%f", location.coordinate.longitude)
         print("\nlat:" + lat + ", lon:" + lon)

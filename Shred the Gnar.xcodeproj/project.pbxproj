@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0785252A1C4486A1002E4944 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078525291C4486A1002E4944 /* FMDB.framework */; };
+		07BAA0D91C445E3A004B05F0 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BAA0D81C445E3A004B05F0 /* libsqlite3.0.tbd */; };
 		07C370371C4006BC00821BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C370361C4006BC00821BD1 /* AppDelegate.swift */; };
 		07C370391C4006BC00821BD1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C370381C4006BC00821BD1 /* FirstViewController.swift */; };
 		07C3703B1C4006BC00821BD1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3703A1C4006BC00821BD1 /* SecondViewController.swift */; };
@@ -15,10 +17,14 @@
 		07C370431C4006BC00821BD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C370411C4006BC00821BD1 /* LaunchScreen.storyboard */; };
 		07C3704B1C4033E600821BD1 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3704A1C4033E600821BD1 /* LocationDataManager.swift */; };
 		2FA281210845E097F4805B19 /* LocationDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA28395327FD9C211214274 /* LocationDatabase.swift */; };
+		2FA285E56769504CD8DB2ED3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2FA28EB8F18D92CD07BAE0D1 /* Podfile */; };
 		2FA28E5B05BCF9F84CB47188 /* LocationDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA28A2E061F3CABEED3AB2C /* LocationDataDelegate.swift */; };
+		FB0FAECD9AABAF5717DEE29C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC52832CF1282D45EABA167 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		078525291C4486A1002E4944 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = "Pods/../build/Debug-iphoneos/FMDB.framework"; sourceTree = "<group>"; };
+		07BAA0D81C445E3A004B05F0 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		07C370331C4006BC00821BD1 /* Shred the Gnar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shred the Gnar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C370361C4006BC00821BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C370381C4006BC00821BD1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +36,10 @@
 		07C3704A1C4033E600821BD1 /* LocationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 		2FA28395327FD9C211214274 /* LocationDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDatabase.swift; sourceTree = "<group>"; };
 		2FA28A2E061F3CABEED3AB2C /* LocationDataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDataDelegate.swift; sourceTree = "<group>"; };
+		2FA28EB8F18D92CD07BAE0D1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3CC52832CF1282D45EABA167 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD95A694883828FEFE66701D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F844416638DF2917AE511F0B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07BAA0D91C445E3A004B05F0 /* libsqlite3.0.tbd in Frameworks */,
+				FB0FAECD9AABAF5717DEE29C /* Pods.framework in Frameworks */,
+				0785252A1C4486A1002E4944 /* FMDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +61,9 @@
 			children = (
 				07C370351C4006BC00821BD1 /* Shred the Gnar */,
 				07C370341C4006BC00821BD1 /* Products */,
+				2FA28EB8F18D92CD07BAE0D1 /* Podfile */,
+				D280DB2C8EC5678AF38D8E47 /* Pods */,
+				A4FEF01156244497A3400206 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +92,25 @@
 			path = "Shred the Gnar";
 			sourceTree = "<group>";
 		};
+		A4FEF01156244497A3400206 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				078525291C4486A1002E4944 /* FMDB.framework */,
+				07BAA0D81C445E3A004B05F0 /* libsqlite3.0.tbd */,
+				3CC52832CF1282D45EABA167 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D280DB2C8EC5678AF38D8E47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD95A694883828FEFE66701D /* Pods.debug.xcconfig */,
+				F844416638DF2917AE511F0B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07C370471C4006BC00821BD1 /* Build configuration list for PBXNativeTarget "Shred the Gnar" */;
 			buildPhases = (
+				B6DDBE9BF30EB8CD04D55ADF /* Check Pods Manifest.lock */,
 				07C3702F1C4006BC00821BD1 /* Sources */,
 				07C370301C4006BC00821BD1 /* Frameworks */,
 				07C370311C4006BC00821BD1 /* Resources */,
+				E57C4404E2E0698F3F695928 /* Embed Pods Frameworks */,
+				3C2F81A8F7C09E7E700D022E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,10 +184,59 @@
 				07C370431C4006BC00821BD1 /* LaunchScreen.storyboard in Resources */,
 				07C370401C4006BC00821BD1 /* Assets.xcassets in Resources */,
 				07C3703E1C4006BC00821BD1 /* Main.storyboard in Resources */,
+				2FA285E56769504CD8DB2ED3 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C2F81A8F7C09E7E700D022E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6DDBE9BF30EB8CD04D55ADF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E57C4404E2E0698F3F695928 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07C3702F1C4006BC00821BD1 /* Sources */ = {
@@ -263,6 +350,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -270,29 +358,44 @@
 		};
 		07C370481C4006BC00821BD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD95A694883828FEFE66701D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
 				INFOPLIST_FILE = "Shred the Gnar/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.donkfish.Shred-the-Gnar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
 		};
 		07C370491C4006BC00821BD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F844416638DF2917AE511F0B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
 				INFOPLIST_FILE = "Shred the Gnar/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.donkfish.Shred-the-Gnar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
 		};
