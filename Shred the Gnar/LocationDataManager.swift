@@ -52,7 +52,7 @@ class LocationDataManager: NSObject, CLLocationManagerDelegate {
 
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 
-        for (index, value) in locationUpdateDelegates.enumerate() {
+        for (_, value) in locationUpdateDelegates.enumerate() {
             value.didUpdateLocations?(locations)
         }
 

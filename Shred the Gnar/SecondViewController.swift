@@ -10,12 +10,16 @@ import UIKit
 import CoreLocation
 
 class SecondViewController: UIViewController {
+    
+    @IBOutlet weak var button: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        button.addTarget(self, action: "sendFileToMail", forControlEvents: .TouchUpInside)
         
-        let locations: NSMutableArray = LocationDatabase.instance.getLocationsForTripId(1)
+        
+        //let locations: NSMutableArray = LocationDatabase.instance.getLocationsForTripId(1)
         
     }
 
@@ -24,6 +28,9 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func sendFileToMail() {
+        print("button pushed")
+    }
 
 }
 

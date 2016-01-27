@@ -10,11 +10,15 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class FirstViewController: UIViewController, LocationDataDelegate {
+class FirstViewController: UIViewController, LocationDataDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var textbox: UILabel!
     
     @IBOutlet weak var mapView: MKMapView!
+    
+    var points = [MKAnnotation]()
+    
+    let MAX_VISIBLE_POINTS = 200
     
     override func viewDidLoad() {
         mapView.mapType = MKMapType.Satellite
@@ -45,23 +49,74 @@ class FirstViewController: UIViewController, LocationDataDelegate {
     }
 
     func didUpdateLocations( locations: [CLLocation]) {
-        var locationArray = locations as NSArray
-        var locationObj = locationArray.lastObject as! CLLocation
-        var coord = locationObj.coordinate
-        
-        if (textbox != nil) {
+        let locationArray = locations as NSArray
+        for (_, location) in locationArray.enumerate() {
             
-            var string = textbox.text as String!
+            let locationObj = location as! CLLocation
+            let coord = locationObj.coordinate
             
-            var lat = String(format:"%f", coord.latitude)
-            var lon = String(format:"%f", coord.longitude)
-            
-            string = string + "\nlat:" + lat + ", lon:" + lon
+            /*
+            if (textbox != nil) {
+                
+                var string = textbox.text as String!
+                
+                var lat = String(format:"%f", coord.latitude)
+                var lon = String(format:"%f", coord.longitude)
+                
+                string = string + "\nlat:" + lat + ", lon:" + lon
 
-            textbox.text = string
+                textbox.text = string
+            }
+            */
+            
+            if (mapView != nil) {
+                
+                
+                mapView.delegate = self
+                let point: MKPointAnnotation = MKPointAnnotation.init()
+                point.coordinate = coord
+                mapView.addAnnotation(point)
+                
+                
+                let count = points.count
+                if (count >= MAX_VISIBLE_POINTS) {
+                    var annotationsToRemove = [MKAnnotation]()
+                    for (var i = 0; i + MAX_VISIBLE_POINTS <= count; i++) {
+                        annotationsToRemove.append(points.removeFirst())
+                    }
+                    mapView.removeAnnotations(annotationsToRemove)
+                }
+                
+                
+            }
         }
         
     }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        if !(annotation is MKPointAnnotation) {
+            return nil
+        }
+        
+        //var id = String(random())
+        var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier("foo")
+        if annotationView == nil {
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "foo")
+            annotationView!.canShowCallout = true
+        }
+        else {
+            annotationView!.annotation = annotation
+        }
+        
+        annotationView!.image = UIImage(named: "BlueDot")
+        
+        points.append(annotation)
+        
+        return annotationView
+        
+    }
+    
 
     func loadLocation() {
         
@@ -77,9 +132,9 @@ class FirstViewController: UIViewController, LocationDataDelegate {
 
         //var camea: MKMapCamera = MKMapCamera(lookingAtCenterCoordinate: locationTo, fromEyeCoordinate: locationFrom, eyeAltitude: distance)
         //
-        var camea: MKMapCamera = MKMapCamera(lookingAtCenterCoordinate: center, fromDistance: distance, pitch: pitch, heading: heading)
+        var camera: MKMapCamera = MKMapCamera(lookingAtCenterCoordinate: center, fromDistance: distance, pitch: pitch, heading: heading)
 
-        mapView.setCamera(camea, animated: false)
+        mapView.setCamera(camera, animated: false)
         
     }
 
